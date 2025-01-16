@@ -5,19 +5,24 @@
 *{
     margin: 0px;
 }
-section{
-    margin: 0px;
+section#conteiner{
+    /*position: relative;*/
     text-align: center;
     width: 100%;
     height: 100vh;
 }
-section > div.titulo{
+section > div.conteudo{
     display: inline-flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /*position: absolute;
+    height: 200px;
+    width: 400px;
+    top: 50%;
+    left: 50%;*/
 }
-section > div.titulo h1{
+section > div.conteudo h1{
     font-family: sans-serif;
     color: var(--cor0);
     font-size: 3em;
