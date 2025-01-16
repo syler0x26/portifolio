@@ -1,26 +1,21 @@
+@charset "UTF-8";
 :root{
     /*paleta de cores*/
     --cor0: #01B8AE;
-}
+    --cor1:#8502bde3;
 *{
     margin: 0px;
+    padding: 0px;
 }
-section#conteiner{
-    /*position: relative;*/
-    text-align: center;
-    width: 100%;
+section#container{
     height: 100vh;
 }
 section > div.conteudo{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    /*position: absolute;
-    height: 200px;
-    width: 400px;
+    margin: 0 auto;
+    position: relative;
     top: 50%;
-    left: 50%;*/
+    transform: translateY(-50%);
+    width: 50%;
 }
 section > div.conteudo h1{
     font-family: sans-serif;
@@ -29,11 +24,62 @@ section > div.conteudo h1{
     font-weight: bolder;
 }
 section  span{
-    color: darkviolet;
+    color: var(--cor1);
 }
-div.icones{
-    color: var(--cor0);
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: bolder;
     font-size: 2em;
+    color: var(--cor1);
+    border: 2px solid var(--cor1);
+    padding: 3px 5px 5px 5px;
+    margin: 0 15px;
+    overflow: hidden;
+    position: relative;
+    &:before{
+        content: '';
+        top: -0%;
+        left: -0%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--cor0);
+        z-index: -1;
+        transition: .7s ease;
+    }
+}
+.btn1{
+    &:before{
+        width: 0;
+        height: 100%;
+    }
+    &:hover{
+        &:before{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+section#img-001{
+    background-image: url("img/pexels-vie-studio-4439454.jpg");
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.651);
+    height: 400px;
+    background-attachment: fixed;
+}
+section#img-001 div{
+    display: inline-block;
+    background-color: #1c1c1c;
+
+}
+section p{
+    padding-top: 20%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+    color: var(--cor0);
 }
 article{  
         /*curva*/
