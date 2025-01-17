@@ -1,8 +1,13 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poly&display=swap');
 :root{
     /*paleta de cores*/
     --cor0: #01B8AE;
     --cor1:#8502bde3;
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-titulo: "Poly", serif;
+}
+/*seletores globais*/
 *{
     margin: 0px;
     padding: 0px;
@@ -14,6 +19,13 @@ a{
 span{
     color: var(--cor1);
 }
+p{
+    font-family: var(--font-padrao);
+}
+h1{
+    font-family: var(--font-titulo);
+}
+/*section*/
 section#container{
     height: 100vh;
 }
@@ -25,7 +37,7 @@ section > div.conteudo{
     width: 50%;
 }
 section > div.conteudo h1{
-    font-family: sans-serif;
+    font-family: var(--font-titulo);
     color: var(--cor0);
     font-size: 3em;
     font-weight: bolder;
@@ -45,6 +57,7 @@ section#container a:hover{
     color: var(--cor1);
 }
 .btn{
+    font-family: var(--font-padrao);
     display: inline-block;
     text-decoration: none;
     font-variant: small-caps;
@@ -81,26 +94,7 @@ section#container a:hover{
         }
     }
 }
-section#img-001{
-    background-image: url("img/pexels-vie-studio-4439454.jpg");
-    background-size: cover;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.651);
-    height: 400px;
-    background-attachment: fixed;
-}
-section#img-001 div{
-    display: inline-block;
-    background-color: #1c1c1c;
-
-}
-section p{
-    padding-top: 20%;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 2em;
-    color: var(--cor0);
-}
-article{  
+article#sobre-mim {  
         /*curva*/
     clip-path: polygon(0 0, 500% 0, -100% 80%, 0 100%);
     background-color: #02aab0;
@@ -109,22 +103,23 @@ article{
     text-align: center;
     height: 100vh;
 }
-article > h2, p{
+article#sobre-mim > h2, p{
     color: #fff;
     font-size: bold;
     padding: 10px;
 }
-article h2{
+article#sobre-mim h2{
     font-size: 2.5em;
 }
-article p{
+article#sobre-mim p{
     font-size: 2em;
 }
-article div.text-01{
+article#sobre-mim div.text-01{
     text-align: center;
     justify-items: auto;
 }
-article div.img-01{
+article#sobre-mim div.img-01{
+    position: relative;
     float: left;
     background-color: #1c1c1c;
     width: 500px;
@@ -135,7 +130,56 @@ article div.img-01{
     background-position: right center;
     background-size: cover;
 }
-
+section#img-001{
+    background-image: url("img/particulas.jpg");
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.651);
+    height: 400px;
+    background-attachment: fixed;
+}
+section#img-001 div{
+    background-color: #1c1c1c;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-70%);
+    background: transparent;
+    font-variant: small-caps;
+}
+section p{
+    font-weight: bolder;
+    font-size: 2em;
+    color: var(--cor0);
+}
+article#projetos{
+    height: 100vh;
+}
+article#projetos > div#box{
+    border: 2px solid var(--cor0);
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+article#projetos > div#box > div.box-001{
+    border: 2px solid var(--cor0);
+    width: 400px;
+    height: 400px;
+}
+article#projetos > div#box > div.box-002{
+    border: 2px solid var(--cor0);
+    width: 400px;
+    height: 400px;
+}
+article#projetos > div#box > div.box-003{
+    border: 2px solid var(--cor0);
+    width: 400px;
+    height: 400px;
+}
 footer{
     background-color: #1c1c1c;
     color: white;
@@ -143,6 +187,6 @@ footer{
     margin: 0px;
     padding: 20px;
 }
-footer  span{
+footer span{
     color: var(--cor0);
 }
