@@ -14,7 +14,6 @@
 }
 a{
     text-decoration: none;
-    color: var(--cor0);
 }
 span{
     color: var(--cor1);
@@ -24,6 +23,27 @@ p{
 }
 h1{
     font-family: var(--font-titulo);
+}
+/*header*/
+header{
+    background-color: #00cdac;
+    padding: 20px;
+}
+header div.cabecalho{
+   margin: auto;
+}
+header a{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-family: var(--font-padrao);
+    font-variant: small-caps;
+    margin-left: 80px;
+    transition: 1s;
+}
+header a:hover{
+    border: 2px solid var(--cor1);
+    color: var(--cor1);
 }
 /*section*/
 section#container{
