@@ -35,6 +35,11 @@ i#burguer{
     padding: 20px;
     text-align: center;
     cursor: pointer;
+    height: 90px;
+    transition: .3s;
+}
+i#burguer:hover{
+    color: rgb(63, 116, 63);
 }
 menu{
     display: none;
@@ -44,6 +49,7 @@ menu{
 menu > ul >li{
     padding-bottom: 25px;
     padding-top: 15px;
+    transition: .3s;
 }
 menu > ul > li > a{
     color: black;
@@ -59,8 +65,8 @@ section{
 }
 section > div#apresentação{
     position: relative;
-    left: 30%;
-    top: 30%;
+    left: 25%;
+    top: 20%;
 }
 section > div#apresentação > h2, h1{
     font-size: 3em;
