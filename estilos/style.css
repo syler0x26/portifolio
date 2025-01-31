@@ -12,17 +12,54 @@ ul{
     list-style-type: none;
 }
 /*fim do padrão geral*/
+body, html{
+    height: 100vh;
+}
+/*inicio da estilixação do header*/
 header{
     background-color: lightgreen;
+    height: 90px;
 }
 header > div#box-menu{
     background-color: lightblue;
     display: inline-block;
+    width: 100px;
 }
-header > div#box-menu-right{
-    background-color: lightcoral;
-    display: inline-block;
+i#burguer{
+    display: block;
+    font-size: 2em;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
 }
-header > div#box-menu-right > ul > li{
-    display: flex;
+menu{
+    display: none;
+    text-align: center;
+    cursor: pointer;
 }
+menu > ul >li{
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+menu > ul > li > a{
+    color: black;
+}
+menu > ul > li:hover{
+    background-color: lightgreen;
+}
+/*fim da estilixação do header*/
+/*inicio da estilização do main*/
+section{
+    background-color: rgba(240, 128, 128, 0.521);
+    height: 92vh;
+}
+section > div#apresentação{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-25%, -60%);
+}
+section > div#apresentação > h2, h1{
+    font-size: 3em;
+}
+/*fim da estilização do main*/

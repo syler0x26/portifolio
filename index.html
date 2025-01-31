@@ -10,23 +10,38 @@
 <body>
     <header>
         <div id="box-menu">
-        <i class="bi bi-list"></i>
-        <menu id="items">
+            <i id="burguer" class="bi bi-list" onclick="clickMenu()"></i>
+        <menu id="itens">
         <ul>
             <li><a href="#">segurança da info</a></li>
             <li><a href="#">inspirações</a></li>
         </ul>
         </menu>
-        <menu>
         </div><!--box-menu-->
-        <div id="box-menu-right">
-        <ul>
-            <li>sobre mim</li>
-            <li>especialidades</li>
-            <li>contate-me</li>
-        </ul>
-    </menu>
-        </div><!--box-menu-right-->
     </header>
+    <main>
+        <section>
+            <div id="apresentação">
+            <h2 class="h2-apresentação">Dev</h2>
+            <h1 class="h1-apresentação">Syler 0x26</h1>
+            </div><!--apresentação-->
+        </section>
+    </main>
+    <script>
+        function mudouTamanho(){
+    if (window.innerWidth >= 768){
+        itens.style.display = 'block'
+    }else{
+        itens.style.display = 'none'
+    }
+}
+function clickMenu(){
+    if (itens.style.display == 'block'){
+        itens.style.display = 'none'
+    } else{
+        itens.style.display = 'block'
+    }
+}
+</script>
 </body>
 </html>
