@@ -1,1 +1,28 @@
 @charset "UTF-8";
+/*inicio do padrão geral*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+/*fim do padrão geral*/
+header{
+    background-color: lightgreen;
+}
+header > div#box-menu{
+    background-color: lightblue;
+    display: inline-block;
+}
+header > div#box-menu-right{
+    background-color: lightcoral;
+    display: inline-block;
+}
+header > div#box-menu-right > ul > li{
+    display: flex;
+}
