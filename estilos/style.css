@@ -55,7 +55,7 @@ menu > ul > li > a{
     color: black;
 }
 menu > ul > li:hover{
-    background-color: lightgreen;
+    background-color: rgb(233, 253, 233);
 }
 /*fim da estilixação do header*/
 /*inicio da estilização do main*/
@@ -66,9 +66,23 @@ section{
 section > div#apresentação{
     position: relative;
     left: 25%;
-    top: 20%;
+    top: 25%;
 }
 section > div#apresentação > h2, h1{
-    font-size: 3em;
+    font-size: 4em;
+}
+section button.btn{
+    border: none;
+    background: transparent;
+    color: rgb(82, 151, 82);
+    font-size: 1.5em;
+    border-radius: 7px;
+    border: 2px solid lightgreen;
+    padding: 5px;
+    transition: .4s;
+}
+section button.btn:hover{
+    background-color: lightgreen;
+    color: rgb(102, 102, 102);
 }
 /*fim da estilização do main*/
