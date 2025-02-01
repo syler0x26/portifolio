@@ -89,4 +89,23 @@
     article#sobre-mim > div.texto-sobre-mim p{
         font-size: 1.4em;
     }
+    article#lin-tec-dominio{
+        height: 60vh;
+        padding: 50px;
+    }
+    article#lin-tec-dominio div.img-dominio{
+        width: 40%;
+        height: 50%;
+    }
+    article#lin-tec-dominio2{
+        margin-top: 55px;
+    }
+    article#lin-tec-dominio2 div.img-dominio2{
+        float: right;
+        width: 40%;
+        height: 250px;
+        margin-left: 15px;
+        margin-right: 18%;
+    }
+
 }
