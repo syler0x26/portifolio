@@ -67,7 +67,7 @@ section{
 }
 section > div#apresentação{
     position: relative;
-    left: 18%;
+    left: 15%;
     top: 25%;
 }
 section > div#apresentação > h2, h1{
@@ -88,7 +88,7 @@ section button.btn:hover{
     color: rgb(102, 102, 102);
 }
 article#sobre-mim{
-    height: 100vh;
+    height: 100%;
 }
 article#sobre-mim > div.texto-sobre-mim > h2{
     margin-top: 25px;
@@ -106,5 +106,23 @@ article#sobre-mim div.img{
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.644);
     background: black url('../img/bkg-sobre-mim.jpg') center center;
     background-size: cover;
+}
+article#lin-tec-dominio{
+    padding: 15px;
+}
+article#lin-tec-dominio > h2{
+    text-align: center;
+}
+article#lin-tec-dominio > div.img-dominio{
+    float: left;
+    background: black url('../img/img-html-css.jpg') center center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+}
+article#lin-tec-dominio > div.txt-dominio{
+    text-align: justify;
+    text-indent: 20px;
 }
 /*fim da estilização do main*/
