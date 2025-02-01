@@ -121,7 +121,22 @@ article#lin-tec-dominio > div.img-dominio{
     height: 200px;
     width: 200px;
 }
-article#lin-tec-dominio > div.txt-dominio{
+article#lin-tec-dominio2{
+    padding-top: 55px;
+}
+article#lin-tec-dominio2 > div.txt-dominio{
+    text-align: justify;
+    text-indent: 20px;
+}
+article#lin-tec-dominio2 > div.img-dominio2{
+    float: right;
+    background: black url('../img/img-php.jpg') center center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+}
+article#lin-tec-dominio2 > div.txt-dominio2{
     text-align: justify;
     text-indent: 20px;
 }
