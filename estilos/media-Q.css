@@ -35,9 +35,58 @@
     article#sobre-mim > div.texto-sobre-mim p{
         font-size: 1.4em;
     }
+    article#lin-tec-dominio{
+        height: 50vh;
+    }
+    article#lin-tec-dominio div.txt-dominio h3{
+        color: var(--cor2);
+        margin-top: 10px;
+        text-indent: 35px;
+    }
+    article#lin-tec-dominio div.txt-dominio p{
+        text-indent: 30px;
+        text-align: justify;
+        padding: 10px;
+    }
+    article#lin-tec-dominio2 div.txt-dominio h3{
+        color: var(--cor2);
+        margin-top: 10px;
+        text-indent: 35px;
+    }
+    article#lin-tec-dominio2 div.txt-dominio p{
+        text-indent: 30px;
+        text-align: justify;
+        padding: 10px;
+    }
 }
 @media screen and (min-width:992px){
-    body{
-        background-color: aqua;
+    section > div#apresentação{
+        position: relative;
+        left: 60%;
+        top: 35%;
+        transform: translate(-30%, -30%);
+    }
+    article#sobre-mim{
+        width: 80vw;
+        height: 100vh;
+        padding-top: 30px;
+        margin: auto;
+    }
+    article#sobre-mim > div.texto-sobre-mim{
+        float: right;
+        width: 70%;
+    }
+    article#sobre-mim > div.img{
+        float: left;
+        margin-top: 45px;
+        width: 30%;
+        height: 350px;
+        border-radius: 10px;
+    }
+    article#sobre-mim > div.texto-sobre-mim h2{
+        font-size: 2.5em;
+    }
+    article#sobre-mim > div.texto-sobre-mim p{
+        font-size: 1.4em;
     }
 }
