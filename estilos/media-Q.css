@@ -64,7 +64,12 @@
         font-size: 1.4em;
     }
 }
-@media screen and (min-width:992px){
+@media screen and (min-width:992px){ /*monitores grandes*/
+    body{
+        background: gray url('../img/particulas.jpg') center center ;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     section > div#apresentação{
         position: relative;
         left: 60%;
@@ -72,8 +77,9 @@
         transform: translate(-30%, -30%);
     }
     article#sobre-mim{
-        width: 80vw;
-        height: 100vh;
+        width: 768px;
+        height: 50vh;
+        background-color: var(--corw);
         padding-top: 30px;
         margin: auto;
     }
@@ -94,23 +100,31 @@
     article#sobre-mim > div.texto-sobre-mim p{
         font-size: 1.4em;
     }
+    section#flex{
+        background-color: var(--cor1);
+        height: 100vh;
+
+    }
     article#lin-tec-dominio{
-        height: 60vh;
+        overflow: hidden;
+        margin: auto;
+        width: 700px;
+        height: 100%;
         padding: 50px;
     }
     article#lin-tec-dominio div.img-dominio{
-        width: 40%;
-        height: 50%;
+        width: 250px;
+        height: 250px;
     }
     article#lin-tec-dominio2{
         margin-top: 55px;
     }
     article#lin-tec-dominio2 div.img-dominio2{
         float: right;
-        width: 40%;
+        width: 250px;
         height: 250px;
         margin-left: 15px;
-        margin-right: 18%;
+        margin-right: 10%;
     }
 
 }
