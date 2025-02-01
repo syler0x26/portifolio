@@ -14,7 +14,7 @@
     }
     article#sobre-mim{
         width: 80vw;
-        height: 100vh;
+        height: 50vh;
         padding-top: 30px;
         margin: auto;
     }
@@ -36,27 +36,32 @@
         font-size: 1.4em;
     }
     article#lin-tec-dominio{
-        height: 50vh;
+        height: 100%;
+        box-shadow: 3px 3px 10px black;
     }
     article#lin-tec-dominio div.txt-dominio h3{
         color: var(--cor2);
         margin-top: 10px;
         text-indent: 35px;
+        font-size: 2em;
     }
     article#lin-tec-dominio div.txt-dominio p{
         text-indent: 30px;
         text-align: justify;
         padding: 10px;
+        font-size: 1.4em;
     }
-    article#lin-tec-dominio2 div.txt-dominio h3{
+    article#lin-tec-dominio2 div.txt-dominio2 h3{
         color: var(--cor2);
         margin-top: 10px;
         text-indent: 35px;
+        font-size: 2em;
     }
-    article#lin-tec-dominio2 div.txt-dominio p{
+    article#lin-tec-dominio2 div.txt-dominio2 p{
         text-indent: 30px;
         text-align: justify;
         padding: 10px;
+        font-size: 1.4em;
     }
 }
 @media screen and (min-width:992px){

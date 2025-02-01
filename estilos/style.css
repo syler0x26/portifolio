@@ -24,6 +24,10 @@ ul{
 span{
     color: var(--cor3);
 }
+mark{
+    background-color: var(--cor3);
+
+}
 /*fim do padrão geral*/
 body, html{
     height: 100vh;
@@ -127,9 +131,11 @@ article#lin-tec-dominio{
     padding-top: 20px;
     padding: 15px;
     background-color: var(--cor1);
-    height: 80vh;
+    height: 100%;
 }
 article#lin-tec-dominio > h2{
+    margin-bottom: 10px;
+    font-size: 2em;
     text-align: center;
     color: var(--cor3);
 }
@@ -161,5 +167,13 @@ article#lin-tec-dominio2 > div.img-dominio2{
 article#lin-tec-dominio2 > div.txt-dominio2{
     text-align: justify;
     text-indent: 20px;
+}
+footer{
+    background-color: var(--corb);
+    height: 30px;
+}
+footer p{
+    text-align: center;
+    color: var(--corw);
 }
 /*fim da estilização do main*/
