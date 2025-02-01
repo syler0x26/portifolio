@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (min-width:768px) and (max-width:992px){
+@media screen and (min-width:768px) and (max-width:992px){ /*tablet*/
     i#burguer{
         display: none;
     }
@@ -11,9 +11,6 @@
         left: 60%;
         top: 35%;
         transform: translate(-30%, -30%);
-    }
-    section > div#apresentação > h2, h1{
-        font-size: 5em;
     }
     article#sobre-mim{
         width: 80vw;
@@ -27,8 +24,10 @@
     }
     article#sobre-mim > div.img{
         float: left;
+        margin-top: 45px;
         width: 30%;
         height: 350px;
+        border-radius: 10px;
     }
     article#sobre-mim > div.texto-sobre-mim h2{
         font-size: 2.5em;

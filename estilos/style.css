@@ -1,6 +1,16 @@
 @charset "UTF-8";
 /*inicio do padrão geral*/
+:root{
+    --cor1: lightblue;
+    --cor2: #0582CA;
+    --cor3: blueviolet;/*h2, span*/
+    --cor4: ;
+    --cor5: ;
+    --corb: black;
+    --corw: white;
+}
 *{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -12,7 +22,7 @@ ul{
     list-style-type: none;
 }
 span{
-    color: rgb(91, 1, 175);
+    color: var(--cor3);
 }
 /*fim do padrão geral*/
 body, html{
@@ -61,7 +71,7 @@ menu > ul > li:hover{
 /*fim da estilixação do header*/
 /*inicio da estilização do main*/
 section{
-    background-color: rgba(240, 128, 128, 0.521);
+    background-color: var(--cor1);
     height: 92vh;
     box-shadow: 0px 2px 5px gray;
 }
@@ -70,22 +80,27 @@ section > div#apresentação{
     left: 15%;
     top: 25%;
 }
-section > div#apresentação > h2, h1{
+section > div#apresentação > h2{
+    font-size: 3em;
+    margin-bottom: -15px;
+}
+section > div#apresentação > h1{
     font-size: 4em;
 }
 section button.btn{
     border: none;
     background: transparent;
-    color: rgb(82, 151, 82);
+    color: var(--cor3);
     font-size: 1.5em;
     border-radius: 7px;
-    border: 2px solid lightgreen;
+    border: 2px solid var(--cor3);
     padding: 5px;
+    margin-top: 5px;
     transition: .4s;
 }
 section button.btn:hover{
-    background-color: lightgreen;
-    color: rgb(102, 102, 102);
+    background-color: var(--cor3);
+    color: var(--corw);
 }
 article#sobre-mim{
     height: 100%;
@@ -94,6 +109,7 @@ article#sobre-mim > div.texto-sobre-mim > h2{
     margin-top: 25px;
     text-align: center;
     font-size: 2em;
+    color: var(--cor3);
 }
 article#sobre-mim > div.texto-sobre-mim  p{
     text-align: justify;
@@ -112,6 +128,7 @@ article#lin-tec-dominio{
 }
 article#lin-tec-dominio > h2{
     text-align: center;
+    color: var(--cor3);
 }
 article#lin-tec-dominio > div.img-dominio{
     float: left;
