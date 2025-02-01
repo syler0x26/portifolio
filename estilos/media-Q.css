@@ -66,7 +66,7 @@
 }
 @media screen and (min-width:992px){ /*monitores grandes*/
     body{
-        background: gray url('../img/particulas.jpg') center center ;
+        background: gray url('../img/bkg-roxo.jpg') center center ;
         background-size: cover;
         background-attachment: fixed;
     }
@@ -113,13 +113,15 @@
         padding: 50px;
     }
     article#lin-tec-dominio div.img-dominio{
+        box-shadow: -5px 5px 0px rgba(137, 43, 226, 0.349);
         width: 250px;
         height: 250px;
     }
     article#lin-tec-dominio2{
-        margin-top: 55px;
+        margin-top: 20px;
     }
     article#lin-tec-dominio2 div.img-dominio2{
+        box-shadow: 5px 5px 0px rgba(137, 43, 226, 0.349);
         float: right;
         width: 250px;
         height: 250px;
