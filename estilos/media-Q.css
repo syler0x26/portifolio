@@ -6,13 +6,28 @@
         background-attachment: fixed;
     }
     header > div#box-menu{
-        width: 70%;
+        background: transparent;
     }
     i#burguer{
-        display: block;
+        display: none;
     }
     menu{
         display: block;
+    }
+    menu > ul > li{
+        display: inline-block;
+        margin-right: 10%;
+    }
+    menu > ul > li:hover{
+        background-color: var(--cor4);
+    }
+    menu  > ul > li > a{
+        color: var(--cor3);
+        border-bottom: 2px solid var(--cor3);
+        transition: .4s;
+    }
+    menu  > ul > li > a:hover{
+        transform: translateY(10%);
     }
     .trilho{
         display: inline-block;
@@ -75,12 +90,39 @@
         padding: 10px;
         font-size: 1.4em;
     }
+    section#formulario > div.formulario{
+        margin: auto;
+    }
 }
 @media screen and (min-width:992px){ /*monitores grandes*/
     body{
         background: gray url('../img/particulas.jpg') center center ;
         background-size: cover;
         background-attachment: fixed;
+    }
+    header > div#box-menu{
+        background: transparent;
+    }
+    i#burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu > ul > li{
+        display: inline-block;
+        margin-right: 10%;
+    }
+    menu > ul > li:hover{
+        background-color: var(--cor4);
+    }
+    menu  > ul > li > a{
+        color: var(--cor3);
+        border-bottom: 2px solid var(--cor3);
+        transition: .4s;
+    }
+    menu  > ul > li > a:hover{
+        transform: translateY(10%);
     }
     .trilho{
         display: inline-block;
@@ -146,5 +188,7 @@
         margin-left: 15px;
         margin-right: 10%;
     }
-
+    section#formulario > div.formulario{
+        margin: auto;
+    }
 }

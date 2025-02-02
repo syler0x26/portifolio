@@ -29,7 +29,7 @@
             <div id="apresentação">
             <h2 class="h2-apresentação">Dev</h2>
             <h1 class="h1-apresentação">Syler<span>0x26</span></h1>
-            <button class="btn">contate-me</button>
+            <button class="btn"> <a href="#formulario">contate-me</a></button>
             </div><!--apresentação-->
         </section>
         <article id="sobre-mim">
@@ -59,6 +59,24 @@
         </article><!--lin-tec-dominio2-->
         </article><!--lin-tec-dominio-->
         </section><!--flex-->
+        <section id="formulario">
+            <div class="formulario">
+                <h2>contate-me</h2>
+                <form action="cad.php" method="post">
+                    <label for="inome">Nome *</label>
+                    <input type="text" name="nome" id="inome" placeholder="seu nome" required>
+                    <label for="iemail">Email *</label>
+                    <input type="email" name="email" id="iemail" placeholder="seu email" required>
+                    <label for="itelefone">Numero</label>
+                    <input type="tel" name="telefone" id="itelefone" placeholder="seu numero de contato">
+                    <textarea name="msg" id="imsg" placeholder="sua mensagem" required></textarea>
+                    <div class="btn-enviar">
+                        <input type="submit" value="enviar">
+                    </div>
+
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <p>Syler<span>0x26</span><span style="color: var(--cor2);">©2025</span></p>
