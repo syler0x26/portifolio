@@ -5,11 +5,17 @@
         background-size: cover;
         background-attachment: fixed;
     }
+    header > div#box-menu{
+        width: 70%;
+    }
     i#burguer{
-        display: none;
+        display: block;
     }
     menu{
         display: block;
+    }
+    .trilho{
+        display: inline-block;
     }
     section > div#apresentação{
         position: relative;
@@ -75,6 +81,12 @@
         background: gray url('../img/particulas.jpg') center center ;
         background-size: cover;
         background-attachment: fixed;
+    }
+    .trilho{
+        display: inline-block;
+    }
+    header > div#box-menu{
+        width: 70%;
     }
     section > div#apresentação{
         position: relative;

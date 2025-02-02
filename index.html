@@ -22,6 +22,10 @@
     </header>
     <main>
         <section>
+            <div class="trilho" id="trilho">
+                <div class="indicador"></div>
+                <p>working</p>
+            </div><!--nao esta pronto-->
             <div id="apresentação">
             <h2 class="h2-apresentação">Dev</h2>
             <h1 class="h1-apresentação">Syler<span>0x26</span></h1>
@@ -37,7 +41,7 @@
             </div><!--img-->
         </article><!--sobre-mim-->
         <section id="flex">
-        <article id="lin-tec-dominio">
+        <article id="lin-tec-dominio" class="color">
             <h2>&#60;Especialidades&#62;</h2>
             <div class="img-dominio">
             </div><!--img-dominio-->
@@ -59,21 +63,6 @@
     <footer>
         <p>Syler<span>0x26</span><span style="color: var(--cor2);">©2025</span></p>
     </footer>
-    <script>
-        function mudouTamanho(){
-    if (window.innerWidth >= 768){
-        itens.style.display = 'block'
-    }else{
-        itens.style.display = 'none'
-    }
-}
-function clickMenu(){
-    if (itens.style.display == 'block'){
-        itens.style.display = 'none'
-    } else{
-        itens.style.display = 'block'
-    }
-}
-</script>
+<script src="script.js"></script>
 </body>
 </html>
