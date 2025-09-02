@@ -24,7 +24,7 @@
 .accordion-button,
 .accordion-body {
   border: none;
-  box-shadow: none; /* remove sombra se houver */
+  box-shadow: none;
 }
 
 .card {
@@ -166,6 +166,14 @@ hr {
 }
 .card-animation:hover {
   transform: rotate(3deg);
+}
+
+.txt-destaque {
+  color: #22d3ee;
+}
+
+section {
+  min-height: 75vh;
 }
 
 /*# sourceMappingURL=style.css.map */
