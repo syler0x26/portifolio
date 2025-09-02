@@ -1,0 +1,19 @@
+@use 'var.scss';
+.accordion{
+        border: none;
+
+    .accordion-button{
+        background: #0b0f17;
+        color: #e5e7eb;
+    }
+    .accordion-body{
+        color: #e5e7eb;
+        background: #0b0f17;
+    }
+}
+.accordion-item,
+.accordion-button,
+.accordion-body {
+  border: none;
+  box-shadow: none; /* remove sombra se houver */
+}

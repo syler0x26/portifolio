@@ -1,0 +1,18 @@
+@use 'var.scss' as v;
+.card {
+    overflow: hidden;
+    background: v.$color-extra;
+    box-shadow: 0 0 0.1rem #e5e7eba8;
+    color: v.$color-terciary;
+
+    .img-zoom {
+        transition: all 0.3s ease-in-out,  background-color 0.4s ease;
+        filter: grayscale(90%);
+        z-index: 1;
+        &:hover {
+            transform: scale(1.1);
+            filter: grayscale(0%);
+        }
+
+    }
+}

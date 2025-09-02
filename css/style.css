@@ -1,0 +1,171 @@
+@charset "UTF-8";
+#home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #e5e7eb;
+}
+
+.accordion {
+  border: none;
+}
+.accordion .accordion-button {
+  background: #0b0f17;
+  color: #e5e7eb;
+}
+.accordion .accordion-body {
+  color: #e5e7eb;
+  background: #0b0f17;
+}
+
+.accordion-item,
+.accordion-button,
+.accordion-body {
+  border: none;
+  box-shadow: none; /* remove sombra se houver */
+}
+
+.card {
+  overflow: hidden;
+  background: #141115;
+  box-shadow: 0 0 0.1rem rgba(229, 231, 235, 0.6588235294);
+  color: #e5e7eb;
+}
+.card .img-zoom {
+  transition: all 0.3s ease-in-out, background-color 0.4s ease;
+  filter: grayscale(90%);
+  z-index: 1;
+}
+.card .img-zoom:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+body {
+  background-color: #0b0f17;
+  color: #e5e7eb;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+.txt-animation {
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.txt-animation span {
+  position: relative;
+}
+
+.txt-animation span::before {
+  content: "";
+  color: #22d3ee;
+  animation: words 20s infinite;
+}
+
+.txt-animation span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-left: 0.2rem solid #22d3ee;
+  right: -10px;
+  animation: cursor 0.8s infinite, digitar 20s steps(15) infinite;
+  width: calc(100% + 15px);
+  background-color: #0b0f17;
+}
+
+@keyframes digitar {
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+    width: 0;
+  }
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+    width: calc(100% + 15px);
+  }
+}
+@keyframes cursor {
+  0% {
+    border-left: 0.2rem solid #0b0f17;
+  }
+}
+@keyframes words {
+  0%, 20% {
+    content: "Olá, pequeno gafanhoto 🖖";
+  }
+  21%, 40% {
+    content: "Bem-vindo ao meu repositório";
+  }
+  41%, 60% {
+    content: "Transformo sonhos em código";
+  }
+  61%, 80% {
+    content: "soluções praticas";
+  }
+  81%, 100% {
+    content: "Syler0x26 - Dev Full-Stack";
+  }
+}
+code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.btn {
+  color: #e5e7eb;
+}
+.btn:hover {
+  color: rgba(229, 231, 235, 0.6431372549);
+}
+
+.btn-animation {
+  box-shadow: 0 0 0.1rem #e5e7eb;
+  transition: all 0.3s ease-out;
+}
+.btn-animation:hover {
+  box-shadow: 0rem 0rem 1rem rgba(34, 211, 238, 0.3647058824);
+  transform: scale(1.1);
+}
+
+.text-big {
+  font-size: 96px;
+}
+
+hr {
+  border: 0.2rem solid #22d3ee;
+  width: 25%;
+  position: relative;
+  left: 35%;
+}
+
+.element-link {
+  color: #22d3ee;
+  text-decoration: none;
+}
+
+.i-animation {
+  font-size: 3rem;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #ff0055, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.colored-bullet::marker {
+  color: #ff0055;
+  font-size: 1.2em;
+}
+
+.card-animation {
+  transition: all 0.3s ease-out;
+}
+.card-animation:hover {
+  transform: rotate(3deg);
+}
+
+/*# sourceMappingURL=style.css.map */

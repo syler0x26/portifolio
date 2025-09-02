@@ -1,86 +1,362 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portifolio</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-Q.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><!--boostrap-->
-</head>
-<body>
-    <header>
-        <div id="box-menu">
-            <i id="burguer" class="bi bi-list" onclick="clickMenu()"></i>
-        <menu id="itens">
-        <ul>
-            <li><a href="security.html">segurança da info</a></li>
-            <li><a href="#">inspirações</a></li>
-        </ul>
-        </menu>
-        </div><!--box-menu-->
-    </header>
-    <main>
-        <section>
-            <div class="trilho" id="trilho">
-                <div class="indicador"></div>
-                <p>working</p>
-            </div><!--nao esta pronto-->
-            <div id="apresentação">
-            <h2 class="h2-apresentação">Dev</h2>
-            <h1 class="h1-apresentação">Syler<span>0x26</span></h1>
-            <button class="btn"> <a href="#formulario">contate-me</a></button>
-            </div><!--apresentação-->
-        </section>
-        <article id="sobre-mim">
-            <div class="texto-sobre-mim">
-            <h2>&#60;Sobre mim&#62;</h2>
-            <p>Sou um desenvolvedor <mark> full-stack </mark> dedicado, sempre em busca de aprimorar minhas habilidades. Apaixonado por <mark> segurança da informação </mark> (infosec), estou atento às melhores práticas e tendências para garantir que meus projetos sejam funcionais e seguros. Minha experiência abrange diversas tecnologias e linguagens de programação, e estou sempre disposto a enfrentar novos desafios e explorar novas soluções.</p>
-            </div><!--texto-sobre-mim-->
-            <div class="img">
-            </div><!--img-->
-        </article><!--sobre-mim-->
-        <section id="flex">
-        <article id="lin-tec-dominio" class="color">
-            <h2>&#60;Especialidades&#62;</h2>
-            <div class="img-dominio">
-            </div><!--img-dominio-->
-            <div class="txt-dominio">
-                <h3>Html5 e Css3</h3>
-                <p>Com um sólido domínio de HTML e CSS, sou capaz de criar páginas web estruturadas e visualmente atraentes. Utilizo HTML para definir a estrutura e o conteúdo das páginas, enquanto o CSS é empregado para estilizar e dar vida ao design. Minha experiência inclui a criação de layouts responsivos, garantindo que as páginas sejam acessíveis e funcionem perfeitamente em diversos dispositivos e tamanhos de tela.</p>
-            </div><!--text-dominio-->
-            <article id="lin-tec-dominio2">
-            <div class="img-dominio2">
-            </div><!--img-dominio2-->
-            <div class="txt-dominio2">
-                <h3>php</h3>
-                <p>Com um sólido domínio de PHP, sou capaz de desenvolver aplicações web robustas e eficientes. Utilizo PHP para criar funcionalidades dinâmicas e interativas, garantindo que os projetos atendam às necessidades dos usuários e dos clientes. Minha experiência inclui a integração de bancos de dados, a implementação de APIs e a otimização de desempenho. Estou sempre atualizado com as melhores práticas e tendências do setor, buscando constantemente aprimorar minhas habilidades e entregar projetos de alta qualidade.</p>
-            </div><!--txt-dominio2-->
-        </article><!--lin-tec-dominio2-->
-        </article><!--lin-tec-dominio-->
-        </section><!--flex-->
-        <section id="formulario">
-            <div class="formulario">
-                <h2>contate-me</h2>
-                <form action="cad.php" method="post">
-                    <label for="inome">Nome *</label>
-                    <input type="text" name="nome" id="inome" placeholder="seu nome" required>
-                    <label for="iemail">Email *</label>
-                    <input type="email" name="email" id="iemail" placeholder="seu email" required>
-                    <label for="itelefone">Numero</label>
-                    <input type="tel" name="telefone" id="itelefone" placeholder="seu numero de contato">
-                    <textarea name="msg" id="imsg" placeholder="sua mensagem" required></textarea>
-                    <div class="btn-enviar">
-                        <input type="submit" value="enviar">
-                    </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-                </form>
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Syler0x26</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section id="home">
+            <div class="container d-flex flex-column align-items-center justify-content-center text-center min-vh-100">
+
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-4 fw-bold gradient-text">
+                            Full-stack Developer &amp; Creative Coder
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <h2 class="txt-animation fs-1"><span></span></h2>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col d-flex justify-content-center gap-3">
+                        <a href="#" class="btn   p-3">
+                            <i class="bi bi-github fs-4"></i>
+                        </a>
+                        <a href="#" class="btn  p-3">
+                            <i class="bi bi-instagram fs-4"></i>
+                        </a>
+                        <a href="#" class="btn  p-3">
+                            <i class="bi bi-linkedin fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </section>
+
+        <!--   <section id="sql-i"> 
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    &lt;Sql injection&gt;
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h1>📓 Anotações — ataque de <code>&lt;Sql injection&gt;</code></h1>
+                                    <ul>
+                                        <li><code>Definição</code> → Vulnerabilidade de segurança em aplicações que usam
+                                            bancos de dados, ocorre
+                                            quando dados do usuário são inseridos em uma consulta SQL sem
+                                            validação/escapamento
+                                            adequado.</li>
+                                        <li><code>Objetivo do atacante</code> → Manipular consultas SQL para:
+
+                                            Obter dados sensíveis.
+
+                                            Alterar ou excluir registros.
+
+                                            Contornar autenticações.
+
+                                            Assumir controle do banco.</li>
+                                        <li><code>Tipos principais</code>:
+
+                                            In-band SQLi → Mais comum, o atacante vê diretamente os resultados da
+                                            injeção.
+
+                                            Error-based → Explora mensagens de erro do banco.
+
+                                            Union-based → Usa UNION SELECT para unir consultas e extrair dados.</li>
+                                        <li><code>Blind SQLi</code> → O atacante não vê diretamente os dados, mas deduz
+                                            pela resposta do sistema.
+
+                                            Boolean-based → O site responde diferente a consultas verdadeiras/falsas.
+
+                                            Time-based → O atacante usa funções como SLEEP() para medir tempo e
+                                            descobrir informações.
+
+                                            Out-of-band SQLi → Dados são exfiltrados via canais externos (como DNS ou
+                                            HTTP requests).
+                                        </li>
+                                        <li><code>Exemplos simples</code>:
+
+                                            -- Entrada maliciosa em um campo de login:
+                                            ' OR '1'='1
+
+
+                                            Resultado: Bypass no login se a query for:
+
+                                            <pre><code>SELECT * FROM usuarios WHERE user = '' OR '1'='1' AND senha = '';</code></pre>
+                                        </li>
+                                        <li><code>Consequências</code>:
+
+                                            Vazamento de dados (senhas, e-mails, cartões).
+
+                                            Modificação/exclusão de tabelas.
+
+                                            Tomada de controle do servidor.
+
+                                            Prejuízos financeiros e legais.</li>
+                                        <li><code>Boas práticas de prevenção</code>:
+
+                                            Prepared Statements (consultas parametrizadas).
+
+                                            ORMs seguros (Ex.: Sequelize, Hibernate).
+
+                                            Validação/escapamento de entradas do usuário.
+
+                                            Menos privilégios no banco (usuário sem DROP ou DELETE amplo).
+
+                                            WAF (Web Application Firewall) como camada extra.</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+        <section class="container my-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="mb-3 gradient-text">Sobre Mim</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>
+                        Olá! Sou um desenvolvedor apaixonado por tecnologia, design limpo e
+                        soluções criativas. Tenho experiência em desenvolvimento web,
+                        automação e interfaces modernas. Meu foco é entregar projetos que
+                        unem performance e beleza.
+                    </p>
+                    <p>
+                        Nas horas vagas, gosto de estudar novas stacks, treinar na academia
+                        e jogar alguns games.
+                    </p>
+                    <a href="#portifolio" class="btn btn-animation mt-3"><i class="bi bi-code-slash"></i> Ver
+                        Projetos</a>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <img src="img/euprofile.jpg" alt="Minha foto" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </section>
+
+        <div class="section" id="portifolio">
+            <h1 class="text-center gradient-text">Portifolio</h1>
+            <hr>
+            <div class="container mt-4">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/inception.png" class="card-img-top img-zoom" alt="Imagem">
+                            <div class="card-body">
+                                <h5 class="card-title">nome do pjt</h5>
+                                <p class="card-text">Descrição breve.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <code>tecnologias</code>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="btn"><i class="bi bi-link"></i> ver site</div>
+                                        <div class="btn"><i class="bi bi-github"></i> ver codigo</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/inception.png" class="card-img-top img-zoom" alt="Imagem">
+                            <div class="card-body">
+                                <h5 class="card-title">nome do pjt</h5>
+                                <p class="card-text">Descrição breve.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <code>tecnologias</code>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="btn"><i class="bi bi-link"></i> ver site</div>
+                                        <div class="btn"><i class="bi bi-github"></i> ver codigo</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/inception.png" class="card-img-top img-zoom" alt="Imagem">
+                            <div class="card-body">
+                                <h5 class="card-title">nome do pjt</h5>
+                                <p class="card-text">Descrição breve.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <code>tecnologias</code>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="btn"><i class="bi bi-link"></i> ver site</div>
+                                        <div class="btn"><i class="bi bi-github"></i> ver codigo</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1 class="gradient-text">Serviços</h1>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100 card-animation">
+                            <div class="card-body">
+                                <h5 class="card-title">nome do trabalho ofertado</h5>
+                                <p class="card-text">
+                                <ul>
+                                    <li class="colored-bullet">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Dolorum, est.</li>
+                                    <li class="colored-bullet">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Dolorum, est.</li>
+                                    <li class="colored-bullet">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Dolorum, est.</li>
+                                    <li class="colored-bullet">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Dolorum, est.</li>
+                                    <li class="colored-bullet">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Dolorum, est.</li>
+                                </ul>
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <code>tecnologias</code>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 card-animation">
+                            <div class="card-body">
+                                <h5 class="card-title">nome do trabalho ofertado</h5>
+                                <p class="card-text">
+                                <ul>
+                                    <li class="colored-bullet">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Dolorum, est.</li>
+                                    <li class="colored-bullet">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Dolorum, est.</li>
+                                    <li class="colored-bullet">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Dolorum, est.</li>
+                                    <li class="colored-bullet">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Dolorum, est.</li>
+                                    <li class="colored-bullet">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Dolorum, est.</li>
+                                </ul>
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <code>tecnologias</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 card-animation">
+                            <div class="card-body">
+                                <h5 class="card-title">nome do trabalho ofertado</h5>
+                                <p class="card-text">
+                                <ul>
+                                    <li class="colored-bullet">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Dolorum, est.</li>
+                                    <li class="colored-bullet">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Dolorum, est.</li>
+                                    <li class="colored-bullet">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Dolorum, est.</li>
+                                    <li class="colored-bullet">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Dolorum, est.</li>
+                                    <li class="colored-bullet">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Dolorum, est.</li>
+                                </ul>
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <code>tecnologias</code>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contato -->
+        <!-- footer -->
+        <footer id="footer" class="bg-dark text-light py-4 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <h1 class="h4 m-0"><i class="bi bi-ubuntu"> </i></h1>
+                    </div>
+
+
+                    <div class="col-md-6 text-md-end">
+                        <p class="m-0">
+                            &copy; 2025 Todos os direitos reservados para
+                            <a href="#" class="text-decoration-none text-primary">Syler0x26</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </main>
-    <footer>
-        <p>Syler<span>0x26</span><span style="color: var(--cor2);">©2025</span></p>
-    </footer>
-<script src="script.js"></script>
+    <script src="vendor/Jquery/jquery-3.7.1.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
