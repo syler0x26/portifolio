@@ -153,7 +153,8 @@
                     <h5>
                         Olá! Sou um desenvolvedor apaixonado por tecnologia, design limpo e
                         soluções criativas. Tenho experiência em desenvolvimento web,
-                        automação e <span class="txt-destaque">interfaces modernas</span>. Meu foco é entregar projetos que
+                        automação e <span class="txt-destaque">interfaces modernas</span>. Meu foco é entregar projetos
+                        que
                         unem <span class="txt-destaque">performance</span> e <span class="txt-destaque">beleza</span>.
                     </h5>
                     <p>
@@ -253,7 +254,7 @@
                 </div>
             </div>
         </div>
-        
+
         <section>
             <div class="container">
                 <div class="row">
@@ -348,6 +349,32 @@
             </div>
         </section>
         <!-- contato -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form id="form" class="container mt-4 w-100">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="text" class="form-label">Como podemos te ajudar?</label>
+                            <input type="text" class="form-control" id="textMaior" required>
+                        </div>
+
+                        <button type="submit" class="btn ">Enviar para WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <footer id="footer" class="bg-dark text-light py-4 mt-5">
             <div class="container">
                 <div class="row align-items-center">
@@ -366,38 +393,12 @@
                 </div>
             </div>
         </footer>
-<form id="form">
-  <label>Nome:</label>
-  <input type="text" id="nome" required><br><br>
 
-  <label>Número:</label>
-  <input type="text" id="numero" required><br><br>
 
-  <label>Email:</label>
-  <input type="email" id="email" required><br><br>
 
-  <button type="submit">Enviar para WhatsApp</button>
-</form>
-
-<script>
-  document.getElementById("form").addEventListener("submit", function(e){
-    e.preventDefault();
-
-    let nome = document.getElementById("nome").value;
-    let numero = document.getElementById("numero").value;
-    let email = document.getElementById("email").value;
-
-    let mensagem = `*Novo contato do site*%0A
-    👤 Nome: ${nome}%0A
-    📞 Número: ${numero}%0A
-    📧 Email: ${email}`;
-
-    // Substitua pelo seu número de WhatsApp (com DDI e DDD, sem espaços)
-    let telefone = "5531971052987"; 
-
-    window.open(`https://api.whatsapp.com/send?phone=${telefone}&text=${mensagem}`, "_blank");
-  });
-</script>
+        <script src="script.js">
+            
+        </script>
 
     </main>
     <script src="vendor/Jquery/jquery-3.7.1.js"></script>
