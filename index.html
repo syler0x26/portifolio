@@ -366,6 +366,38 @@
                 </div>
             </div>
         </footer>
+<form id="form">
+  <label>Nome:</label>
+  <input type="text" id="nome" required><br><br>
+
+  <label>Número:</label>
+  <input type="text" id="numero" required><br><br>
+
+  <label>Email:</label>
+  <input type="email" id="email" required><br><br>
+
+  <button type="submit">Enviar para WhatsApp</button>
+</form>
+
+<script>
+  document.getElementById("form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let nome = document.getElementById("nome").value;
+    let numero = document.getElementById("numero").value;
+    let email = document.getElementById("email").value;
+
+    let mensagem = `*Novo contato do site*%0A
+    👤 Nome: ${nome}%0A
+    📞 Número: ${numero}%0A
+    📧 Email: ${email}`;
+
+    // Substitua pelo seu número de WhatsApp (com DDI e DDD, sem espaços)
+    let telefone = "5531971052987"; 
+
+    window.open(`https://api.whatsapp.com/send?phone=${telefone}&text=${mensagem}`, "_blank");
+  });
+</script>
 
     </main>
     <script src="vendor/Jquery/jquery-3.7.1.js"></script>
