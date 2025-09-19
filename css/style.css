@@ -172,12 +172,12 @@ hr {
   color: #22d3ee;
 }
 
-section {
-  min-height: 75vh;
-}
-
 .bi-arrow-down {
   font-size: 3rem;
+}
+
+#responsiveness-presentation {
+  background: #111724;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -144,17 +144,8 @@ hr {
     font-size: 3rem;
 }
 
-.gradient-text {
-    background: linear-gradient(90deg, #ff0055, #22d3ee);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-}
-.colored-bullet::marker {
-  color: #ff0055;
-  font-size: 1.2em;
-}
+.gradient-text { background: linear-gradient(90deg, #ff0055, #22d3ee); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; } .colored-bullet::marker { color: #ff0055; font-size: 1.2em; }
+
 .card-animation{
     transition: all 0.3s ease-out;
     &:hover{
@@ -164,9 +155,9 @@ hr {
 .txt-destaque{
     color: v.$color-secundary;
 }
-section{
-    min-height: 75vh;
-}
 .bi-arrow-down {
   font-size: 3rem;
+}
+#responsiveness-presentation{
+    background: #111724;
 }
